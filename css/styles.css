@@ -226,11 +226,11 @@ height: auto;
 }
 
 /* Чем мы занимаемся */
+
 .box-img{
     display: flex;
      justify-content: space-between;
 }
-
 .our-work{
     background: var(--color-work);
     padding-bottom: 94px; 
@@ -243,11 +243,12 @@ height: auto;
     padding-top: 94px;
      padding-bottom: 94px;
 }
-
+ 
 .team-list{
     display: flex;
     justify-content: space-between;
     height: 428px;
+    
 }
 .title{
     font-weight: bold;
@@ -579,13 +580,11 @@ height: auto;
   
 
   /* Наши клиенты */
+
 .our-clients {
 padding-right: 215px;
 padding-left: 215px;
 }
-
-
-
   .clients-team {
     display: flex;
     justify-content: space-around;
