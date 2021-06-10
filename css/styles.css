@@ -233,6 +233,7 @@ height: auto;
     text-transform: uppercase;
     color: var(--main-color-headers);
     margin-bottom: 10px;
+    margin-top: 30px;
     
 }
 .special-text{
@@ -253,7 +254,7 @@ height: auto;
      justify-content: space-between;
 }
 .our-work{
-    background: var(--color-work);
+    
     padding-bottom: 94px; 
     padding-top: 94px;   
 }
@@ -265,7 +266,7 @@ height: auto;
 /* Наша команда */
 .team{
      
-  background: var(--team-filter-btn-bg);
+  background: var(--color-work);
   padding-top: 94px;
    padding-bottom: 94px; 
 }
