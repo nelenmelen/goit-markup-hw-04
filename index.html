@@ -16,7 +16,7 @@
   </head>
   <body class="web-work">
     <!-- Шапка сайта -->
-    <header>
+    <header class="head">
       <div class="conteiner">
       <nav class="sait-nav">
         <a href="./index.html" class="logo"><span class="web-logo">Web</span>Studio</a>
@@ -102,7 +102,8 @@
         <ul class="list-item">
             <li class="scorecard">
               <img src="./images/d.jpg" alt="photo designer" width="270" />                   
-                <h3 class="team-member">Игорь Демьяненко</h3>
+                <div class="team-conteiner">
+              <h3 class="team-member">Игорь Демьяненко</h3>
                 <p class="team-text">Product Designer</p>
                 <ul class="icons-list">
                  <li class="icons-card">
@@ -133,11 +134,12 @@
                      </svg>
                     </a>
                   </li>
-                </ul>        
+                </ul>  
+              </div>      
            </li>
             <li class="scorecard">
               <img src="./images/olya.jpg" alt="photo developer" width="270" />
-                
+              <div class="team-conteiner">
                 <h3 class="team-member">Ольга Репина</h3> 
                 <p class="team-text"> Frontend Developer</p>
                 <ul class="icons-list">
@@ -169,11 +171,12 @@
                     </svg>
                    </a>
                  </li>
-               </ul>                    
+               </ul> 
+              </div>                   
             </li>
             <li class="scorecard">
               <img src="./images/kolya.jpg" alt="photo marketing" width="270" />
-                
+              <div class="team-conteiner">
                 <h3 class="team-member">Николай Тарасов</h3>
                 <p class="team-text">Marketing</p>
                 <ul class="icons-list">
@@ -206,11 +209,11 @@
                    </a>
                  </li>
                </ul>
-               
+              </div>
             </li>
             <li class="scorecard"> 
               <img src="./images/misha.jpg" alt="photo ui designer" width="270" />
-                
+              <div class="team-conteiner">
                 <h3 class="team-member">Михаил Ермаков</h3>
                 <p class="team-text">UI Designer</p>
                 <ul class="icons-list">
@@ -243,60 +246,68 @@
                    </a>
                  </li>
                </ul>
-              
+              </div>
             </li>
         </ul> 
         </div>                          
        </section>
       <!-- Постоянные клиенты -->
-      <section class="client">
+      <div class="conteiner">
         <div class="our-clients">
+        <section class="client">
       <h2 class="our-team">Постоянные клиенты</h2>
       <ul class="clients-team">
         <li class="our-clients-team">
-          <a href="" class="clients-link"></a>
+          <a href="" class="clients-link">
           <svg class="svg-client">
-            <use href="./images/symbol-defs.svg#icon-clientone"></use>
+            <use href="./images/symbol-defs.svg#icon-one" ></use>
           </svg>
+        </a>
         </li>
      
         <li class="our-clients-team">
-          <a href="" class="clients-link"></a>
+          <a href="" class="clients-link">
           <svg class="svg-client">
-            <use href="./images/symbol-defs.svg#icon-clienttwo"></use>
+            <use href="./images/symbol-defs.svg#icon-two"></use>
           </svg>
+        </a>
         </li>
       
         <li class="our-clients-team">
-          <a href="" class="clients-link"></a>
+          <a href="" class="clients-link">
           <svg class="svg-client">
-            <use href="./images/symbol-defs.svg#icon-clientthree"></use>
+            <use href="./images/symbol-defs.svg#icon-three"></use>
           </svg>
+        </a>
         </li>
      
         <li class="our-clients-team">
-          <a href="" class="clients-link"></a>
+          <a href="" class="clients-link">
           <svg class="svg-client">
-            <use href="./images/symbol-defs.svg#icon-clientfore"></use>
+            <use href="./images/symbol-defs.svg#icon-four"></use>
           </svg>
+        </a>
         </li>
      
         <li class="our-clients-team">
-          <a href="" class="clients-link"></a>
+          <a href="" class="clients-link">
           <svg class="svg-client">
-            <use href="./images/symbol-defs.svg#icon-clientfive"></use>
+            <use href="./images/symbol-defs.svg#icon-five"></use>
           </svg>
+        </a>
         </li>
       
         <li class="our-clients-team">
-          <a href="" class="clients-link"></a>
+          <a href="" class="clients-link">
           <svg class="svg-client">
-            <use  href="./images/symbol-defs.svg#icon-clientsix"></use>
+            <use  href="./images/symbol-defs.svg#icon-six"></use>
           </svg>
+        </a>
         </li>
       </ul>
-        </div>
-    </section>
+        </section>
+  </div>
+      </div>
     </main>
      <!-- Адресса -->
      <footer class="footer"> 
@@ -323,7 +334,7 @@
         <ul class="footer-social" >
           <li>
             <a href="#">
-              <svg class="social">
+              <svg class="socials">
                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -331,21 +342,21 @@
           </li>
           <li>
             <a href="#">
-              <svg class="social">
+              <svg class="socials">
                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
               </svg>  
             </a>
           </li>
           <li>
             <a href="#">
-              <svg class="social">
+              <svg class="socials">
                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
               </svg>  
             </a>
           </li>
           <li>
             <a href="#">
-              <svg class="social">
+              <svg class="socials">
                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </a>

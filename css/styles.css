@@ -40,22 +40,28 @@ height: auto;
     }
 
 .conteiner {
+    box-sizing: border-box;
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.head .conteiner {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 /* общие свойства ссылок */
 
 
 /* ссылки */
 .link {
-    color:inherit;
-   font-style: normal;   
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.143;
-   letter-spacing: 0.02em;
+  text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: inherit;
  }
 
 /* Шапка сайта */
@@ -68,9 +74,9 @@ height: auto;
     font-size: 26px; 
     line-height: 1.192;
     color: var(--main-color-headers);
-    padding-top: 24px;
-    padding-bottom: 25px;
     margin-right: 93px;
+    
+    
     
 
   }
@@ -82,41 +88,31 @@ height: auto;
     line-height: 1.192;
     letter-spacing: 0.03em;
     color: var(--color-logo-links); 
+    width: 145px;
 
     
-}
-.web-link li{
-    
-    font-weight: 500;
-    line-height: 1.172;
-    letter-spacing: 0.02em;
-    display:flex
 }
 
 .sait-nav {
     display:flex;
     align-items: center; 
-    justify-content: space-between;  
+    justify-content: space-between; 
+  
 }
 
-.web-link li:not(:first-child) {
-    margin-left: 50px;
-}
 .web-link{
-    font-family: Roboto;
-    line-height: 1.142;
-    font-style: normal;
-    font-size: 14px;
-    color: var(--main-color-headers) ;
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  /* width: 294px;
+  */
     
  }
  /* контакты  */
 
 .web-contacts 
 {
+    align-items: center;
+    margin-left: 305px;
     display: flex; 
     justify-content: space-between; 
     width: 333px;
@@ -124,7 +120,7 @@ height: auto;
     
    }
    .web-link li:not(:last-child) {
-     margin-right: 30px;
+     margin-right: 50px;
 
    }
    
@@ -163,7 +159,7 @@ height: auto;
      background-size: cover;
      background-repeat: no-repeat;
      justify-content: center;
-  
+     margin: 0 auto;
       
       }
 
@@ -286,6 +282,14 @@ height: auto;
   margin-bottom: 50px;
 } 
 
+.team-conteiner {
+  padding: 30px 32px;
+}
+ 
+.icons-card:not(:last-child){
+  margin-right: 10px;
+}
+
 .team .scorecard{
  background: var(--white-color);             
  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -321,6 +325,9 @@ height: auto;
   display: flex;
   justify-content: center;   
 }
+
+
+
 .icons-list .icons-card{      
  display: flex;
  justify-content: center;
@@ -338,12 +345,11 @@ height: auto;
 }
 .icons-ref:hover,
 .icons-ref:focus{
- fill: #FFFFFF;
-  background-color:var(--color-button-logo) ;  
+ fill: var(--white-color);
+background-color:var(--color-button-logo) ;  
 }
 
 
- 
 .team-svg{
   width: 20px;
     height: 20px;
@@ -381,8 +387,12 @@ justify-content: center;
 }
 .footer-social li:hover,
 .footer-social li:focus{
-  fill: var(--white-color);
+  
   background-color: var(--color-button-logo);
+}
+
+.footer-social li:not(:last-child){
+  margin-right: 10px;
 }
 
 .title-join{
@@ -438,6 +448,12 @@ margin-top: 9px;
 
 .social {
   fill: var(--company-social-color);
+  width: 20px;
+  height: 20px;
+}
+
+.socials {
+  fill: var(--white-color);
   width: 20px;
   height: 20px;
 }
@@ -599,59 +615,49 @@ margin-top: 9px;
     color: var(--main-text-color);
     }
 
-/* sprite */
-
-/* header */
-
 
   /* Наши клиенты */
+  .client{
+    padding-top: 94px;
+   padding-bottom: 94px;
+  } 
 
-.our-clients {
-padding-right: 215px;
-padding-left: 215px;
-}
+  .svg-client{
+    width: 106px;
+    height: 60px;
+    align-items: center;
+    margin: 16px 32px;
+    border: none; 
+    fill: var(--company-social-color);
+  }
+
+
   .clients-team {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
   }
-.our-clients-team:not(:last-child) {
-    margin-right: 30px;}
 
-  .our-clients-team{
+  .clients-link:hover,
+  .clients-link:focus{
+    outline: 1px solid var(--color-button-logo);
+  }
+  
+  .clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    fill: var(--company-social-color);
     width: 170px;
     height: 92px;
-  }
-
-
-.our-clients-team{
-  display: flex;
+    outline: 1px solid #AFB1B8;
   
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  fill: var(--icons-color);
-  border: 1px solid #AFB1B8;
-  border-color: var(--icons-color);
-  border-radius: 4px;
-  box-sizing: border-box;
-
-}
-
-.client {
-    padding: 94px 0;
   }
 
+  .our-clients-team:not(:last-child){
+    margin-right: 30px; 
+  }
 
-
-.our-clients-team:hover,
-.our-clients-team:focus {
-    background: #2196F3;  
-}
-
-.svg-client{
-  fill:#AFB1B8
-}
- 
 .our-team{
   font-weight: bold;
   font-size: 36px;
@@ -661,7 +667,10 @@ padding-left: 215px;
   color: var(--main-color-headers);
   margin-bottom: 50px;
 }
- 
+ .svg-client:hover,
+ .svg-client:focus{
+  fill: var(--color-button-logo)
+ }
 
 
 
