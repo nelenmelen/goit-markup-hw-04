@@ -262,7 +262,7 @@ height: auto;
 /* Наша команда */
 .team{
      
-  background: var(--color-work);
+  background: var(--color-our-team);
   padding-top: 94px;
    padding-bottom: 94px; 
 }
@@ -321,7 +321,6 @@ height: auto;
 .icons-list{
   margin: 0 auto;
   margin-top: 16px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;   
 }
@@ -343,8 +342,8 @@ height: auto;
  height: 44px;   
  border-radius: 50%;
 }
-.icons-ref:hover,
-.icons-ref:focus{
+.icons-ref:hover, .icons-ref:hover svg,
+.icons-ref:focus  .icons-ref:focus svg{
  fill: var(--white-color);
 background-color:var(--color-button-logo) ;  
 }
@@ -639,7 +638,7 @@ margin-top: 9px;
   }
 
   .clients-link:hover,
-  .clients-link:focus{
+  .clients-link:focus {
     outline: 1px solid var(--color-button-logo);
   }
   
@@ -673,5 +672,9 @@ margin-top: 9px;
  }
 
 
+.our-clients-team:hover, .our-clients-team:hover svg,
+.our-clients-team:focus{
+  fill: var(--color-button-logo)
 
+}
 
