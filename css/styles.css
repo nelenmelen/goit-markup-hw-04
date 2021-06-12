@@ -353,7 +353,7 @@ background-color:var(--color-button-logo) ;
   width: 20px;
     height: 20px;
 }
-/* Андреса */
+/* Адреса */
 
 
 .footer .conteiner{ 
@@ -370,39 +370,16 @@ background-color:var(--color-button-logo) ;
   width: 231px; 
   margin-right: 70px;
 } 
-.footer-join{
- display: flex;
-justify-content: center;
 
-}
-.footer-social li{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;   
- border-radius: 50%;  
-}
-.footer-social li:hover,
-.footer-social li:focus{
-  
-  background-color: var(--color-button-logo);
-}
 
-.footer-social li:not(:last-child){
-  margin-right: 10px;
-}
 
-.title-join{
-  text-transform: uppercase;
-  color: var(--white-color);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.142;             
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
-}
+
+
+
+
+
+
+
 
 .footer .logo{
 color: var(--white-color);      
@@ -437,6 +414,11 @@ color: var(--white-color);
   letter-spacing: 0.03em; 
   color: var(--white-color);       
 }
+/* .footer .conteiner{ 
+  display: flex;  
+  padding-top: 60px;
+  padding-bottom: 60px;        
+} */
 .footer-contacts li{
 margin-top: 9px;
 }
@@ -444,16 +426,47 @@ margin-top: 9px;
 .footer .link:focus{
   color: var(--color-button-logo);
 }
+.footer-join {
+  display: flex;
+ justify-content: center;   
+} 
 
-.social {
+
+.socials {
   width: 20px;
   height: 20px;
 }
-
-.socials {
-  fill: var(--white-color);
-  width: 20px;
-  height: 20px;
+.title-join{
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;             
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.social-list:not(:last-child){
+  margin-right: 10px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  fill:#FFFFFF;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.svg-social:hover,
+.svg-social:focus {
+  fill: #FFFFFF;
+  background-color: var(--color-button-logo);
 }
 
 
@@ -577,6 +590,7 @@ margin-top: 9px;
 .portfolio-down{
     background: var(--background);
 }
+
 .footer-web{
     font-family: Raleway;
     font-weight: bold;
@@ -626,8 +640,7 @@ margin-top: 9px;
     align-items: center;
     margin: 16px 32px;
     border: none; 
-    fill: var(--company-social-color);
-  }
+    }
 
 
   .clients-team {
@@ -649,12 +662,14 @@ margin-top: 9px;
     align-items: center; 
     width: 170px;
     height: 92px;
-    outline: 1px solid #AFB1B8;
+    border: 1px solid #AFB1B8;
+    fill: var(--company-social-color);
   
   }
-  .our-clients-team:hover,
-  .our-clients-team:focus{
+  .clients-link:hover,
+  .clients-link:focus{
     fill: var(--color-button-logo);
+    border:var(--color-button-logo);
   }
 
   .our-clients-team:not(:last-child){
@@ -669,16 +684,5 @@ margin-top: 9px;
   letter-spacing: 0.03em;
   color: var(--main-color-headers);
   margin-bottom: 50px;
-}
- .svg-client:hover,
- .svg-client:focus{
-  fill: var(--color-button-logo)
- }
-
-
-.our-clients-team:hover, .our-clients-team:hover svg,
-.our-clients-team:focus .our-clients-team:focus svg{
-  fill: var(--color-button-logo);
-
 }
 
