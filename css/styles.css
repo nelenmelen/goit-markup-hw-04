@@ -205,14 +205,31 @@ height: auto;
      
 /* особенности  */
 
-.special{
+.section-one{
     padding-top: 94px; 
 }
+
+.section-two{
+display: flex;
+justify-content: space-between;
+}
+
+.section-three{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: var(--color-our-team);
+  border-radius: 4px;
+}
+
 
 .special content{
     display: flex; 
     justify-content: space-between;
 }
+
 .special-columns li:not(:last-child){
     margin-right: 30px;
 }
